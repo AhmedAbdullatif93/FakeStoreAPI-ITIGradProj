@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Test Create Product">
+        <classes>
+            <class name="tests.CreateProduct"/>
+        </classes>
+    </test>
+    <test name="Test Get Product">
+        <classes>
+            <class name="tests.GetSpecificProduct"/>
+        </classes>
+    </test>
+    <test name="Test Update Product">
+        <classes>
+            <class name="tests.UpdateProduct"/>
+        </classes>
+    </test>
+    <test name="Test Delete Product">
+        <classes>
+            <class name="tests.DeleteProduct"/>
+        </classes>
+    </test>
+</suite>

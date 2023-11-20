@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Test Create User">
+        <classes>
+            <class name="tests.createUser"/>
+        </classes>
+    </test>
+    <test name="Test Get User">
+        <classes>
+            <class name="tests.getUser"/>
+        </classes>
+    </test>
+    <test name="Test Update User">
+        <classes>
+            <class name="tests.updateUser"/>
+        </classes>
+    </test>
+    <test name="Test Delete User">
+        <classes>
+            <class name="tests.deleteUser"/>
+        </classes>
+    </test>
+</suite>
