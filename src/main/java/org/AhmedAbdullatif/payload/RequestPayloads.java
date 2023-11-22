@@ -9,16 +9,16 @@ public class RequestPayloads {
 
     public ProductDetails setProductPayload(){
         ProductDetails productDetails = new ProductDetails();
-        productDetails.setTitle("Pikachu pijama");
+        productDetails.setTitle("Pikachu sneakers");
         productDetails.setPrice(500);
-       productDetails.setDescription("Pijamas Unisex Adult Cosplay Pikachu");
+       productDetails.setDescription("Sneakers Adult Cosplay Pikachu");
         productDetails.setCategory("women's clothing");
         return productDetails;
     }
 
     public ProductDetails setToUpdateProductPayload(){
         ProductDetails productDetails = new ProductDetails();
-        productDetails.setTitle("Yoda pijama");
+        productDetails.setTitle("Yoda Sneakers");
         productDetails.setPrice(550);
         return productDetails;
     }

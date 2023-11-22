@@ -30,7 +30,7 @@ public class UpdateProduct extends BaseTest{
                     .put(APIConstants.updateProduct);
 
             assertActions.verifyStatusCode(response);
-            assertActions.verifyResponseBody((String) apiActions.getDataFromJsonPath(response, "title"), "Yoda pijama", "The value title is not updated.");
+            assertActions.verifyResponseBody((String) apiActions.getDataFromJsonPath(response, "title"), "Yoda Sneakers", "The value title is not updated.");
             assertActions.verifyResponseBody(apiActions.getDataFromJsonPath(response, "price"), 550, "The price is not updated.");
 
             System.out.println(response.body().prettyPeek());
