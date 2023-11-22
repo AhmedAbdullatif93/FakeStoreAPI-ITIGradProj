@@ -8,7 +8,7 @@
     </test>
     <test name="Test Get Products By Category Name">
         <classes>
-            <class name="tests.GetProductsByCategoryName"/>
+            <class name="tests.filterProductsByCategoryName"/>
         </classes>
     </test>
 

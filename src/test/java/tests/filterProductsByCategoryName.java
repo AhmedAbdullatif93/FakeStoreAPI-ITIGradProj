@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class GetProductsByCategoryName extends BaseTest{
+public class filterProductsByCategoryName extends BaseTest{
 
     @Test
     public void testGetFilterByCategory(ITestContext context){
@@ -18,8 +18,14 @@ public class GetProductsByCategoryName extends BaseTest{
                 .when()
                 .get(APIConstants.getProductByCategory);
 
+        int count = response.path("data.size()");
+        System.out.println("ID Count: "+count);
+
         assertActions.verifyStatusCode(response);
-        assertActions.verifyResponseBodyElementContentString(apiActions.getDataFromJsonPath(response, "[0].category"), "electronics", "Title don't content category electronics");
+        for (int i = 1; i < count; i++) {
+            assertActions.verifyResponseBodyElementContentString(apiActions.getDataFromJsonPath(response, "["+i+"].category"), "electronics", "Object "+i+" category isn't electronics");
+        }
+
         System.out.println(response.body().prettyPeek());
     }
 
